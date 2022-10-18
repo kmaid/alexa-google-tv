@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "alexa-chromecast",
+  "version": "1.0.0",
+  "description": "Local network skill to use Alexa to control chromecast with android TV.",
+  "main": "build/index.js",
+  "repository": "git@github.com:kmaid/alexa-chromecast.git",
+  "author": "Thomas Waterfall <thomas.waterfall@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "adb start-server && yarn build && node build/index.js",
+    "start:dev": "tsnd --respawn index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@devicefarmer/adbkit": "^3.2.3",
+    "bluebird": "^3.7.2",
+    "dotenv": "^16.0.3",
+    "sinricpro": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.37",
+    "@types/node": "^18.11.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
+}
