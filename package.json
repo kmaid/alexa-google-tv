@@ -1,10 +1,10 @@
 {
   "private": true,
-  "name": "alexa-chromecast",
-  "version": "1.0.0",
-  "description": "Local network skill to use Alexa to control chromecast with android TV.",
+  "name": "alexa-google-tv",
+  "version": "0.0.1",
+  "description": "Local network skill to use Alexa to control Google TV",
   "main": "build/index.js",
-  "repository": "git@github.com:kmaid/alexa-chromecast.git",
+  "repository": "git@github.com:kmaid/alexa-google-tv.git",
   "author": "Thomas Waterfall <thomas.waterfall@gmail.com>",
   "license": "MIT",
   "scripts": {

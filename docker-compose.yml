@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  alexa-chromecast:
+  alexa-google-tv:
     restart: unless-stopped
     build: .
     env_file:
