@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  alexa-chromecast:
+    restart: unless-stopped
+    build: .
+    env_file:
+      - stack.env
+    volumes:
+      - android-keys:/root/.android
+volumes:
+  android-keys:

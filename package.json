@@ -8,7 +8,7 @@
   "author": "Thomas Waterfall <thomas.waterfall@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "adb start-server && yarn build && node build/index.js",
+    "start": "node build/index.js",
     "start:dev": "tsnd --respawn index.ts",
     "build": "tsc"
   },
