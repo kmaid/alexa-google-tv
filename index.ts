@@ -76,4 +76,7 @@ startSinricPro(sinricpro, {
     }
     return true;
   },
+  onDisconnect: () => {
+    console.log("Connection closed");
+  },
 });

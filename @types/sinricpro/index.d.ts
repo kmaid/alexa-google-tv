@@ -21,6 +21,7 @@ export interface Callbacks {
   mediaControl?: (string, data: MediaControl) => void;
   skipChannels?: (string, string) => void;
   changeChannel?: (string, string) => void;
+  onDisconnect?: () => void;
 }
 
 export const startSinricPro: (test: SinricPro, callbacks: Callbacks) => void;
