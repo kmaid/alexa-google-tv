@@ -4,9 +4,9 @@ Skill to use Alexa to control Google TV.
 
 # Requirements
 
-- Google TV (eg Chromecast with Google TV)
+- Google TV with Developer mode enabled (eg Chromecast with Google TV)
 - TV with HDMI-CEC
-- Local Server with Docker
+- Server on 24/7 same network as Chromecast with Docker
 - Free https://sinric.pro/ account
 
 # How it works
@@ -39,7 +39,7 @@ Volume control:
 
 # Installation
 
-To be written. There are issues with making this as reusable as possible. stack.env specfically.
+To be written. There are issues with making this as reusable as possible. stack.env specifically.
 
 # FAQ
 

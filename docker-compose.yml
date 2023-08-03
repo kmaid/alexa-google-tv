@@ -1,11 +1,22 @@
 version: "3.9"
 services:
   alexa-google-tv:
+    container_name: alexa-google-tv
     restart: unless-stopped
     build: .
-    env_file:
-      - stack.env
     volumes:
       - android-keys:/root/.android
+    labels:
+      - homepage.description=Chromecast Alexa intergration
+      - homepage.icon=chromecast.png
+      - homepage.name=Alexa Google TV
+      - homepage.group=Automation
+      - homepage.weight=3
+    environment:
+      - SINRIC_DEVICE_ID=${SINRIC_DEVICE_ID}
+      - SINRIC_APP_KEY=${SINRIC_APP_KEY}
+      - SINRIC_APP_SECRET=${SINRIC_APP_SECRET}
+      - CHROMECAST_IP=${CHROMECAST_IP}
+      - DEBUG=${DEBUG}
 volumes:
   android-keys:
