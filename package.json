@@ -13,10 +13,10 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@devicefarmer/adbkit": "^3.2.3",
+    "@devicefarmer/adbkit": "^3.2.5",
     "bluebird": "^3.7.2",
-    "dotenv": "^16.0.3",
-    "sinricpro": "^2.7.1"
+    "dotenv": "16.3.1",
+    "sinricpro": "2.8.1"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.37",
